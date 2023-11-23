@@ -99,9 +99,8 @@ function displayBlogPostDetails(blogPost,usuarioAuth) {
 
     if (blogPost.image !== null) {
         var imagePost = document.createElement('img');
-        var imagePostO = backendAddress + blogPost.image;
-        imagePostO.replace(/\/\//g, '/');
-        imagePost.src = imagePostO;
+        var imgBP = blogPost.image
+        var imagePost = backendAddress + imgBP.substring(1);
         div2.appendChild(imagePost);
         console.log(imagePost.src);
     }
