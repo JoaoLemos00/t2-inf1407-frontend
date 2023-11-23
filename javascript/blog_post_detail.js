@@ -101,6 +101,7 @@ function displayBlogPostDetails(blogPost,usuarioAuth) {
         var imagePost = document.createElement('img');
         let urlOriginal =  blogPost.image;
         let urlCorrigida = urlOriginal.startsWith('/') ? urlOriginal.substring(1) : urlOriginal;
+        console.log(urlCorrigida);
         imagePost.src = backendAddress + urlCorrigida;
         div2.appendChild(imagePost);
         console.log(imagePost.src);
