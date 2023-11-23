@@ -99,7 +99,7 @@ function displayBlogPostDetails(blogPost,usuarioAuth) {
 
     if (blogPost.image !== null) {
         var imagePost = document.createElement('img');
-        var imagePost = backendAddress + blogPost.image;
+        imagePost.src = backendAddress + blogPost.image;
         div2.appendChild(imagePost);
         console.log(imagePost.src);
     }
