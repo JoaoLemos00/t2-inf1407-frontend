@@ -99,9 +99,7 @@ function displayBlogPostDetails(blogPost,usuarioAuth) {
 
     if (blogPost.image !== null) {
         var imagePost = document.createElement('img');
-        let urlOriginal = blogPost.image;
-        let urlCorrigida = urlOriginal.startsWith('/') ? urlOriginal.substring(1) : urlOriginal;
-        var imagePost = backendAddress + urlCorrigida;
+        var imagePost = backendAddress + blogPost.image;
         div2.appendChild(imagePost);
         console.log(imagePost.src);
     }
