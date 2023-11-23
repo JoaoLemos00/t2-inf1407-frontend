@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log(data)
                 console.log(data.new_password2)
                 if (data.message === "Senha alterada com sucesso.") {
-                    window.location.assign('/frontend/public/index.html');
+                    window.location.assign('/index.html');
                 } else if (data.new_password2){
                     data.new_password2.forEach(element => {
                         msg.innerHTML = element;
